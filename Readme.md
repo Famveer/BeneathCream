@@ -23,35 +23,26 @@ To download the dataset, use [this link](https://www.cambridgecybercrime.uk/proc
 * Clone this repository:
 
   ```bash
-  git clone https://github.com/famveer/CreamSkimming
+  git clone https://github.com/famveer/BeneathCream
   git submodule add -b main https://github.com/fmorenovr/nlpToolkit.git py/nlpToolkit
   git submodule update --remote
   ```
 
-* Download dataset [here]().  
+* Download dataset [here](https://drive.google.com/drive/folders/105LEoBoUmWX0lGAjAbA1me37hCVSqe9T?usp=sharing).  
 * Create a `.env` file, and add the path of the data downloaded and models.  
   ```
     DATA_PATH=/path_to/datasets/
     MODEL_PATH=/path_to/models/
   ```
   
-* First, run the notebook `notebooks/SQL/Extracting_Zip.ipynb`.  
-  Then, execute `notebooks/SQL/SQL_backup.ipynb`
-  and `notebooks/SQL/SQL_to_CSV.ipynb`
-  
-* Choose the best model to segment images.  
-  Next, run the notebook `notebooks/Data/ADE20k/Generate_Segmentations.ipynb`.  
-  Then, run the notebook `notebooks/Data/ADE20k/Group_Segmentations.ipynb`.  
+* First, run the notebook `notebooks/Data/CVE_Codes.ipynb`.  
+  Then, run `notebooks/Data/Languages.ipynb`.  
+  Then, run `notebooks/Data/LLM_Labeling.ipynb`.  
+  Then, run `notebooks/Data/CVE_Statistics.ipynb`.  
 
-* Second, run the notebook `notebooks/Data/UPD4k/Generate_UPD4k.ipynb`.  
-  Next, run the notebook `notebooks/Data/UPD4k/Group_UPD4k.ipynb`.  
-  
-* Train the safety classifier at `notebooks/Models/Ensemble_Classifications.ipynb`.  
+* Second, run `notebooks/Features/Extraction.ipynb`.  
 
-* Generates Post-Hoc SHAP Explanations at `notebooks/Explanations/SHAP.ipynb`.  
-* Generates CounterFactuals at `notebooks/Explanations/CounterFactuals.ipynb`.  
-
-* Generates LLM human-language Interpretations at `notebooks/LLM/Interpretations.ipynb`.  
+* Finally, run `notebooks/Models/Linear_and_Ensemble_Models.ipynb`.  
 
 
 # Citation
