@@ -1,6 +1,6 @@
 # Beneath the Cream
 
-Here we analyze the [PostCog dataset](https://postcog.cambridgecybercrime.uk/) to classify textual information and justify categories using GPT-based models. [Paper](https://resume.fmorenovr.com/documents/papers/book_chapters/2024_CSCML.pdf).
+Here we analyze the [PostCog dataset](https://postcog.cambridgecybercrime.uk/) to classify textual information and justify categories using GPT-based models. [Paper](https://resume.fmorenovr.com/documents/articles/book_chapters/2024_CSCML.pdf).
 
 # Requirements
 
